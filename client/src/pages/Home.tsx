@@ -1,5 +1,5 @@
 import Sidebar from "@/components/Sidebar";
-import { Copy, Check } from "lucide-react";
+import { Copy, Check, Download, FileJson, Package } from "lucide-react";
 import { useState } from "react";
 
 export default function Home() {
@@ -724,6 +724,183 @@ export default function Home() {
                   <li>• Tamanho: 192x192px (Android)</li>
                   <li>• Tamanho: 180x180px (iOS)</li>
                   <li>• Sempre com espaço de segurança</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Downloads Section */}
+        <section
+          id="downloads"
+          className="py-20 px-4 md:px-8 lg:px-12 bg-slate-50"
+        >
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-heading-1 mb-4">Downloads</h2>
+            <p className="text-lg text-muted-foreground mb-12">
+              Baixe todos os arquivos da marca em alta qualidade para usar em
+              seus projetos.
+            </p>
+
+            {/* Download Categories */}
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              {/* Logos */}
+              <div className="card-elevated">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <Package className="text-primary" size={24} />
+                  </div>
+                  <h3 className="text-heading-3">Logos</h3>
+                </div>
+                <p className="text-body-small text-muted-foreground mb-6">
+                  Versões clara e escura em alta resolução
+                </p>
+                <div className="space-y-2">
+                  <a
+                    href="/manus-storage/logo_principal_claro_aed040ad.png"
+                    download="flow-logo-claro.png"
+                    className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
+                  >
+                    <Download size={16} />
+                    Logo Clara
+                  </a>
+                  <a
+                    href="/manus-storage/logo_principal_dark_4d96613c.png"
+                    download="flow-logo-escura.png"
+                    className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
+                  >
+                    <Download size={16} />
+                    Logo Escura
+                  </a>
+                </div>
+              </div>
+
+              {/* Favicons */}
+              <div className="card-elevated">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <FileJson className="text-primary" size={24} />
+                  </div>
+                  <h3 className="text-heading-3">Favicons</h3>
+                </div>
+                <p className="text-body-small text-muted-foreground mb-6">
+                  Ícones para web e aplicações
+                </p>
+                <div className="space-y-2">
+                  <a
+                    href="/manus-storage/favicon_claro_f3110c1a.png"
+                    download="favicon-claro.png"
+                    className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
+                  >
+                    <Download size={16} />
+                    Favicon Clara
+                  </a>
+                  <a
+                    href="/manus-storage/favicon_dark_89a37e18.png"
+                    download="favicon-escura.png"
+                    className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
+                  >
+                    <Download size={16} />
+                    Favicon Escura
+                  </a>
+                </div>
+              </div>
+
+              {/* Circular Favicons */}
+              <div className="card-elevated">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <Package className="text-primary" size={24} />
+                  </div>
+                  <h3 className="text-heading-3">Favicons Circulares</h3>
+                </div>
+                <p className="text-body-small text-muted-foreground mb-6">
+                  Versão circular para redes sociais
+                </p>
+                <div className="space-y-2">
+                  <a
+                    href="/manus-storage/favicon2_circle_claro_8eb104ac.png"
+                    download="favicon-circular-claro.png"
+                    className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
+                  >
+                    <Download size={16} />
+                    Circular Clara
+                  </a>
+                  <a
+                    href="/manus-storage/favicon2_circle_dark_67d6c6bc.png"
+                    download="favicon-circular-escura.png"
+                    className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
+                  >
+                    <Download size={16} />
+                    Circular Escura
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Complete Package */}
+            <div className="card-elevated bg-gradient-to-r from-primary/5 to-blue-50 border-2 border-primary/20">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
+                <div className="mb-4 md:mb-0">
+                  <h3 className="text-heading-3 mb-2">Pacote Completo</h3>
+                  <p className="text-body-small text-muted-foreground">
+                    Baixe todos os arquivos de uma vez em um arquivo ZIP compactado
+                  </p>
+                </div>
+                <a
+                  href="/manus-storage/brand-assets_3516144a.zip"
+                  download="flow-brand-assets.zip"
+                  className="flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-semibold whitespace-nowrap"
+                >
+                  <Download size={20} />
+                  Baixar Tudo
+                </a>
+              </div>
+            </div>
+
+            {/* File Info */}
+            <div className="mt-12 grid md:grid-cols-2 gap-6">
+              <div className="card-elevated">
+                <h4 className="text-heading-3 mb-4">Formatos Inclusos</h4>
+                <ul className="space-y-2 text-body-small">
+                  <li className="flex gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span>PNG com transparência (alta qualidade)</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Resolução: 300 DPI para impressão</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Versões clara e escura</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Formatos quadrado e retangular</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="card-elevated">
+                <h4 className="text-heading-3 mb-4">Dicas de Uso</h4>
+                <ul className="space-y-2 text-body-small">
+                  <li className="flex gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Mantenha as proporções originais</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Use versão clara em fundos escuros</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Use versão escura em fundos claros</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span>Consulte o manual para mais detalhes</span>
+                  </li>
                 </ul>
               </div>
             </div>
