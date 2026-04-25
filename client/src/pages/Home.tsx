@@ -838,13 +838,61 @@ export default function Home() {
               </div>
             </div>
 
+            {/* HD Packages */}
+            <div className="mb-12">
+              <h3 className="text-heading-2 mb-6">Pacotes em Alta Definição</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* HD Com Background */}
+                <div className="card-elevated bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-blue-200">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-lg bg-blue-500/20 flex items-center justify-center">
+                      <Package className="text-blue-600" size={24} />
+                    </div>
+                    <h4 className="text-heading-3">HD com Background</h4>
+                  </div>
+                  <p className="text-body-small text-muted-foreground mb-4">
+                    Arquivos em alta definição (2496x1664px) com backgrounds originais
+                  </p>
+                  <a
+                    href="/manus-storage/brand-assets-hd-completo_d44e3aeb.zip"
+                    download="flow-brand-assets-hd.zip"
+                    className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold"
+                  >
+                    <Download size={20} />
+                    Baixar HD (11 MB)
+                  </a>
+                </div>
+
+                {/* HD Sem Background */}
+                <div className="card-elevated bg-gradient-to-br from-green-50 to-green-100 border-2 border-green-200">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-lg bg-green-500/20 flex items-center justify-center">
+                      <Package className="text-green-600" size={24} />
+                    </div>
+                    <h4 className="text-heading-3">HD sem Background</h4>
+                  </div>
+                  <p className="text-body-small text-muted-foreground mb-4">
+                    Logos com transparência PNG para máxima versatilidade
+                  </p>
+                  <a
+                    href="/manus-storage/brand-assets-hd-completo_d44e3aeb.zip"
+                    download="flow-brand-assets-hd-nobg.zip"
+                    className="flex items-center gap-2 px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold"
+                  >
+                    <Download size={20} />
+                    Baixar HD sem BG (11 MB)
+                  </a>
+                </div>
+              </div>
+            </div>
+
             {/* Complete Package */}
             <div className="card-elevated bg-gradient-to-r from-primary/5 to-blue-50 border-2 border-primary/20">
               <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
                 <div className="mb-4 md:mb-0">
-                  <h3 className="text-heading-3 mb-2">Pacote Completo</h3>
+                  <h3 className="text-heading-3 mb-2">Pacote Padrão</h3>
                   <p className="text-body-small text-muted-foreground">
-                    Baixe todos os arquivos de uma vez em um arquivo ZIP compactado
+                    Arquivos em resolução padrão (1248x832px)
                   </p>
                 </div>
                 <a
@@ -853,7 +901,7 @@ export default function Home() {
                   className="flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-semibold whitespace-nowrap"
                 >
                   <Download size={20} />
-                  Baixar Tudo
+                  Baixar Padrão (4.7 MB)
                 </a>
               </div>
             </div>
