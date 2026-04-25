@@ -1,5 +1,5 @@
 import Sidebar from "@/components/Sidebar";
-import { Copy, Check, Download, FileJson, Package } from "lucide-react";
+import { Copy, Check, Download, FileJson, Package, Image } from "lucide-react";
 import { useState } from "react";
 
 export default function Home() {
@@ -725,6 +725,123 @@ export default function Home() {
                   <li>• Tamanho: 180x180px (iOS)</li>
                   <li>• Sempre com espaço de segurança</li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Mockups Section */}
+        <section
+          id="mockups"
+          className="py-20 px-4 md:px-8 lg:px-12 bg-white"
+        >
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-heading-1 mb-4">Mockups & Aplicações</h2>
+            <p className="text-lg text-muted-foreground mb-12">
+              Visualize como a marca Flow Digital Studio se aplica em diferentes
+              materiais e contextos de uso.
+            </p>
+
+            {/* Mockups Grid */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Business Card */}
+              <div className="card-elevated overflow-hidden group">
+                <div className="relative overflow-hidden rounded-lg mb-4 bg-slate-100 h-48">
+                  <img
+                    src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028412809/DeEqKmpMqnkVXfJSwikgsd/mockup-business-card-SvQLgRb7agAYo28x7uVtmi.webp"
+                    alt="Cartão de Visita"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h3 className="text-heading-3 mb-2">Cartão de Visita</h3>
+                <p className="text-body-small text-muted-foreground">
+                  Design moderno com gradiente Flow. Frente com logo e tagline,
+                  verso com informações de contato.
+                </p>
+              </div>
+
+              {/* Envelope */}
+              <div className="card-elevated overflow-hidden group">
+                <div className="relative overflow-hidden rounded-lg mb-4 bg-slate-100 h-48">
+                  <img
+                    src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028412809/DeEqKmpMqnkVXfJSwikgsd/mockup-envelope-4p4YCza9UpCv6AZySqD9aF.webp"
+                    alt="Envelope"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h3 className="text-heading-3 mb-2">Envelope Corporativo</h3>
+                <p className="text-body-small text-muted-foreground">
+                  Envelope profissional com logo e informações da empresa.
+                  Ideal para correspondências oficiais.
+                </p>
+              </div>
+
+              {/* Website */}
+              <div className="card-elevated overflow-hidden group">
+                <div className="relative overflow-hidden rounded-lg mb-4 bg-slate-100 h-48">
+                  <img
+                    src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028412809/DeEqKmpMqnkVXfJSwikgsd/mockup-website-cgwuyGJWf47AaMmWencge7.webp"
+                    alt="Website"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h3 className="text-heading-3 mb-2">Website</h3>
+                <p className="text-body-small text-muted-foreground">
+                  Design web responsivo com header em gradiente Flow.
+                  Navegação clara e call-to-action destacado.
+                </p>
+              </div>
+
+              {/* Social Media */}
+              <div className="card-elevated overflow-hidden group">
+                <div className="relative overflow-hidden rounded-lg mb-4 bg-slate-100 h-48">
+                  <img
+                    src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028412809/DeEqKmpMqnkVXfJSwikgsd/mockup-social-media-Mv2GFeYG4EMpQP4xqnHgKo.webp"
+                    alt="Redes Sociais"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h3 className="text-heading-3 mb-2">Redes Sociais</h3>
+                <p className="text-body-small text-muted-foreground">
+                  Perfil Instagram com logo circular, bio e feed com posts
+                  profissionais em cores da marca.
+                </p>
+              </div>
+
+              {/* T-Shirt */}
+              <div className="card-elevated overflow-hidden group">
+                <div className="relative overflow-hidden rounded-lg mb-4 bg-slate-100 h-48">
+                  <img
+                    src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028412809/DeEqKmpMqnkVXfJSwikgsd/mockup-tshirt-CmXw2xcZysgEWjQ9jWXTEE.webp"
+                    alt="Camiseta"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h3 className="text-heading-3 mb-2">Camiseta Corporativa</h3>
+                <p className="text-body-small text-muted-foreground">
+                  Camiseta preta com logo Flow em laranja e azul. Frente e
+                  verso com branding profissional.
+                </p>
+              </div>
+
+              {/* Additional Info Card */}
+              <div className="card-elevated bg-gradient-to-br from-primary/5 to-blue-50 border-2 border-primary/20 flex flex-col justify-center">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
+                    <Image className="text-primary" size={24} />
+                  </div>
+                  <h3 className="text-heading-3">Mais Mockups</h3>
+                </div>
+                <p className="text-body-small text-muted-foreground mb-4">
+                  Estes são exemplos de como a marca pode ser aplicada.
+                  Entre em contato para mockups customizados de outros materiais.
+                </p>
+                <a
+                  href="#contato"
+                  className="inline-flex items-center gap-2 text-primary font-semibold hover:underline"
+                >
+                  Solicitar Mockup →
+                </a>
               </div>
             </div>
           </div>

@@ -16,6 +16,7 @@ const sidebarItems: SidebarItem[] = [
   { id: "uso-correto", label: "Uso Correto", href: "#uso-correto" },
   { id: "uso-incorreto", label: "Uso Incorreto", href: "#uso-incorreto" },
   { id: "aplicacoes", label: "Aplicações", href: "#aplicacoes" },
+  { id: "mockups", label: "Mockups", href: "#mockups" },
   { id: "downloads", label: "Downloads", href: "#downloads" },
   { id: "contato", label: "Contato", href: "#contato" },
 ];
