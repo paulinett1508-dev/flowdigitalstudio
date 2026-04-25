@@ -18,10 +18,12 @@ function Router() {
   );
 }
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
+// Design: Minimalismo Corporativo Moderno
+// - Tema claro como padrão (light)
+// - Paleta: Laranja (#FF6500) + Azul Escuro (#001F4D)
+// - Tipografia: Poppins para títulos, Inter para corpo
+// - Layout: Grid assimétrico com espaçamento generoso
+// - Interações: Transições suaves e feedback visual claro
 
 function App() {
   return (
