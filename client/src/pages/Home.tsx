@@ -71,7 +71,7 @@ export default function Home() {
                 <h3 className="text-heading-3 mb-6">Versão Clara</h3>
                 <div className="bg-white p-8 rounded-lg mb-6 flex items-center justify-center min-h-48">
                   <img
-                    src="/manus-storage/logo_principal_claro_aed040ad.png"
+                    src="/logo-principal-gradiente-fundo-claro.svg"
                     alt="Logo Flow - Versão Clara"
                     className="max-w-full h-auto"
                   />
@@ -87,7 +87,7 @@ export default function Home() {
                 <h3 className="text-heading-3 mb-6">Versão Escura</h3>
                 <div className="bg-slate-900 p-8 rounded-lg mb-6 flex items-center justify-center min-h-48">
                   <img
-                    src="/manus-storage/logo_principal_dark_4d96613c.png"
+                    src="/logo-principal-gradiente-fundo-escuro.svg"
                     alt="Logo Flow - Versão Escura"
                     className="max-w-full h-auto"
                   />
@@ -105,19 +105,19 @@ export default function Home() {
               <div className="grid md:grid-cols-4 gap-6">
                 {[
                   {
-                    src: "/manus-storage/favicon_claro_f3110c1a.png",
+                    src: "/simbolo-solo-gradiente-fundo-claro.svg",
                     title: "Favicon - Clara",
                   },
                   {
-                    src: "/manus-storage/favicon_dark_89a37e18.png",
+                    src: "/simbolo-solo-mono-branco-fundo-escuro.svg",
                     title: "Favicon - Escura",
                   },
                   {
-                    src: "/manus-storage/favicon2_circle_claro_8eb104ac.png",
+                    src: "/simbolo-circular-gradiente-fundo-claro.svg",
                     title: "Favicon Circular - Clara",
                   },
                   {
-                    src: "/manus-storage/favicon2_circle_dark_67d6c6bc.png",
+                    src: "/simbolo-circular-gradiente-fundo-escuro.svg",
                     title: "Favicon Circular - Escura",
                   },
                 ].map((favicon, idx) => (
@@ -482,7 +482,7 @@ export default function Home() {
                 <h3 className="text-heading-3 mb-6">Em Fundos Claros</h3>
                 <div className="bg-white p-8 rounded-lg mb-6 flex items-center justify-center min-h-48 border border-border">
                   <img
-                    src="/manus-storage/logo_principal_claro_aed040ad.png"
+                    src="/logo-principal-gradiente-fundo-claro.svg"
                     alt="Logo em fundo claro"
                     className="max-w-xs h-auto"
                   />
@@ -497,7 +497,7 @@ export default function Home() {
                 <h3 className="text-heading-3 mb-6">Em Fundos Escuros</h3>
                 <div className="bg-slate-900 p-8 rounded-lg mb-6 flex items-center justify-center min-h-48">
                   <img
-                    src="/manus-storage/logo_principal_dark_4d96613c.png"
+                    src="/logo-principal-gradiente-fundo-escuro.svg"
                     alt="Logo em fundo escuro"
                     className="max-w-xs h-auto"
                   />
@@ -518,7 +518,7 @@ export default function Home() {
                   }}
                 >
                   <img
-                    src="/manus-storage/logo_principal_dark_4d96613c.png"
+                    src="/logo-principal-gradiente-fundo-escuro.svg"
                     alt="Logo com gradiente"
                     className="max-w-xs h-auto"
                   />
@@ -533,12 +533,12 @@ export default function Home() {
                 <h3 className="text-heading-3 mb-6">Favicon em Aplicações</h3>
                 <div className="bg-slate-100 p-8 rounded-lg mb-6 flex items-center justify-center min-h-48 gap-4">
                   <img
-                    src="/manus-storage/favicon_claro_f3110c1a.png"
+                    src="/simbolo-solo-gradiente-fundo-claro.svg"
                     alt="Favicon"
                     className="max-w-24 h-auto"
                   />
                   <img
-                    src="/manus-storage/favicon2_circle_claro_8eb104ac.png"
+                    src="/simbolo-circular-gradiente-fundo-claro.svg"
                     alt="Favicon Circular"
                     className="max-w-24 h-auto"
                   />
@@ -569,7 +569,7 @@ export default function Home() {
                 </h3>
                 <div className="bg-slate-100 p-8 rounded-lg mb-4 flex items-center justify-center min-h-40">
                   <img
-                    src="/manus-storage/logo_principal_claro_aed040ad.png"
+                    src="/logo-principal-gradiente-fundo-claro.svg"
                     alt="Logo distorcida"
                     className="max-w-xs h-auto"
                     style={{ transform: "scaleX(0.7)" }}
@@ -587,7 +587,7 @@ export default function Home() {
                 </h3>
                 <div className="bg-slate-100 p-8 rounded-lg mb-4 flex items-center justify-center min-h-40">
                   <img
-                    src="/manus-storage/logo_principal_claro_aed040ad.png"
+                    src="/logo-principal-gradiente-fundo-claro.svg"
                     alt="Logo rotacionada"
                     className="max-w-xs h-auto"
                     style={{ transform: "rotate(45deg)" }}
@@ -605,7 +605,7 @@ export default function Home() {
                 </h3>
                 <div className="bg-slate-100 p-8 rounded-lg mb-4 flex items-center justify-center min-h-40">
                   <img
-                    src="/manus-storage/logo_principal_claro_aed040ad.png"
+                    src="/logo-principal-gradiente-fundo-claro.svg"
                     alt="Logo com cores alteradas"
                     className="max-w-xs h-auto"
                     style={{ filter: "hue-rotate(120deg)" }}
@@ -623,7 +623,7 @@ export default function Home() {
                 </h3>
                 <div className="bg-slate-100 p-8 rounded-lg mb-4 flex items-center justify-center min-h-40 relative">
                   <img
-                    src="/manus-storage/logo_principal_claro_aed040ad.png"
+                    src="/logo-principal-gradiente-fundo-claro.svg"
                     alt="Logo com texto sobreposto"
                     className="max-w-xs h-auto"
                   />
@@ -652,7 +652,7 @@ export default function Home() {
                 <h3 className="text-heading-3 mb-6">Web</h3>
                 <div className="bg-slate-100 p-8 rounded-lg mb-6 flex items-center justify-center min-h-40">
                   <img
-                    src="/manus-storage/logo_principal_claro_aed040ad.png"
+                    src="/logo-principal-gradiente-fundo-claro.svg"
                     alt="Logo para web"
                     className="max-w-xs h-auto"
                   />
@@ -669,7 +669,7 @@ export default function Home() {
                 <h3 className="text-heading-3 mb-6">Impressão</h3>
                 <div className="bg-white p-8 rounded-lg mb-6 flex items-center justify-center min-h-40 border-2 border-border">
                   <img
-                    src="/manus-storage/logo_principal_claro_aed040ad.png"
+                    src="/logo-principal-gradiente-fundo-claro.svg"
                     alt="Logo para impressão"
                     className="max-w-xs h-auto"
                   />
@@ -686,7 +686,7 @@ export default function Home() {
                 <h3 className="text-heading-3 mb-6">Redes Sociais</h3>
                 <div className="bg-slate-900 p-8 rounded-lg mb-6 flex items-center justify-center min-h-40">
                   <img
-                    src="/manus-storage/favicon2_circle_dark_67d6c6bc.png"
+                    src="/simbolo-circular-gradiente-fundo-escuro.svg"
                     alt="Logo para redes sociais"
                     className="max-w-24 h-auto"
                   />
@@ -704,7 +704,7 @@ export default function Home() {
                 <div className="bg-slate-100 p-8 rounded-lg mb-6 flex items-center justify-center min-h-40 gap-4">
                   <div className="flex flex-col items-center">
                     <img
-                      src="/manus-storage/favicon_claro_f3110c1a.png"
+                      src="/simbolo-solo-gradiente-fundo-claro.svg"
                       alt="App Icon"
                       className="max-w-16 h-auto mb-2"
                     />
@@ -712,7 +712,7 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col items-center">
                     <img
-                      src="/manus-storage/favicon2_circle_claro_8eb104ac.png"
+                      src="/simbolo-circular-gradiente-fundo-claro.svg"
                       alt="Splash Screen"
                       className="max-w-16 h-auto mb-2"
                     />
@@ -874,7 +874,7 @@ export default function Home() {
                 </p>
                 <div className="space-y-2">
                   <a
-                    href="/manus-storage/logo_principal_claro_aed040ad.png"
+                    href="/logo-principal-gradiente-fundo-claro.png"
                     download="flow-logo-claro.png"
                     className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
                   >
@@ -882,7 +882,7 @@ export default function Home() {
                     Logo Clara
                   </a>
                   <a
-                    href="/manus-storage/logo_principal_dark_4d96613c.png"
+                    href="/logo-principal-gradiente-fundo-escuro.png"
                     download="flow-logo-escura.png"
                     className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
                   >
@@ -905,7 +905,7 @@ export default function Home() {
                 </p>
                 <div className="space-y-2">
                   <a
-                    href="/manus-storage/favicon_claro_f3110c1a.png"
+                    href="/simbolo-solo-gradiente-fundo-claro.png"
                     download="favicon-claro.png"
                     className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
                   >
@@ -913,7 +913,7 @@ export default function Home() {
                     Favicon Clara
                   </a>
                   <a
-                    href="/manus-storage/favicon_dark_89a37e18.png"
+                    href="/simbolo-solo-mono-branco-fundo-escuro.png"
                     download="favicon-escura.png"
                     className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
                   >
@@ -936,7 +936,7 @@ export default function Home() {
                 </p>
                 <div className="space-y-2">
                   <a
-                    href="/manus-storage/favicon2_circle_claro_8eb104ac.png"
+                    href="/simbolo-circular-gradiente-fundo-claro.png"
                     download="favicon-circular-claro.png"
                     className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
                   >
@@ -944,7 +944,7 @@ export default function Home() {
                     Circular Clara
                   </a>
                   <a
-                    href="/manus-storage/favicon2_circle_dark_67d6c6bc.png"
+                    href="/simbolo-circular-gradiente-fundo-escuro.png"
                     download="favicon-circular-escura.png"
                     className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
                   >
@@ -952,74 +952,6 @@ export default function Home() {
                     Circular Escura
                   </a>
                 </div>
-              </div>
-            </div>
-
-            {/* HD Packages */}
-            <div className="mb-12">
-              <h3 className="text-heading-2 mb-6">Pacotes em Alta Definição</h3>
-              <div className="grid md:grid-cols-2 gap-6">
-                {/* HD Com Background */}
-                <div className="card-elevated bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-blue-200">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 rounded-lg bg-blue-500/20 flex items-center justify-center">
-                      <Package className="text-blue-600" size={24} />
-                    </div>
-                    <h4 className="text-heading-3">HD com Background</h4>
-                  </div>
-                  <p className="text-body-small text-muted-foreground mb-4">
-                    Arquivos em alta definição (2496x1664px) com backgrounds originais
-                  </p>
-                  <a
-                    href="/manus-storage/brand-assets-hd-completo_d44e3aeb.zip"
-                    download="flow-brand-assets-hd.zip"
-                    className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold"
-                  >
-                    <Download size={20} />
-                    Baixar HD (11 MB)
-                  </a>
-                </div>
-
-                {/* HD Sem Background */}
-                <div className="card-elevated bg-gradient-to-br from-green-50 to-green-100 border-2 border-green-200">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 rounded-lg bg-green-500/20 flex items-center justify-center">
-                      <Package className="text-green-600" size={24} />
-                    </div>
-                    <h4 className="text-heading-3">HD sem Background</h4>
-                  </div>
-                  <p className="text-body-small text-muted-foreground mb-4">
-                    Logos com transparência PNG para máxima versatilidade
-                  </p>
-                  <a
-                    href="/manus-storage/brand-assets-hd-completo_d44e3aeb.zip"
-                    download="flow-brand-assets-hd-nobg.zip"
-                    className="flex items-center gap-2 px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold"
-                  >
-                    <Download size={20} />
-                    Baixar HD sem BG (11 MB)
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Complete Package */}
-            <div className="card-elevated bg-gradient-to-r from-primary/5 to-blue-50 border-2 border-primary/20">
-              <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
-                <div className="mb-4 md:mb-0">
-                  <h3 className="text-heading-3 mb-2">Pacote Padrão</h3>
-                  <p className="text-body-small text-muted-foreground">
-                    Arquivos em resolução padrão (1248x832px)
-                  </p>
-                </div>
-                <a
-                  href="/manus-storage/brand-assets_3516144a.zip"
-                  download="flow-brand-assets.zip"
-                  className="flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-semibold whitespace-nowrap"
-                >
-                  <Download size={20} />
-                  Baixar Padrão (4.7 MB)
-                </a>
               </div>
             </div>
 
@@ -1084,7 +1016,7 @@ export default function Home() {
               ou solicitações especiais.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="card-elevated">
                 <h3 className="text-heading-3 mb-3">WhatsApp</h3>
                 <a
@@ -1092,6 +1024,16 @@ export default function Home() {
                   className="text-primary font-semibold hover:underline text-lg"
                 >
                   (89) 99912-8436
+                </a>
+              </div>
+
+              <div className="card-elevated">
+                <h3 className="text-heading-3 mb-3">Email</h3>
+                <a
+                  href="mailto:paulinett@live.com"
+                  className="text-primary font-semibold hover:underline"
+                >
+                  paulinett@live.com
                 </a>
               </div>
 

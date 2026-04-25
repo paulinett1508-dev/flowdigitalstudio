@@ -95,6 +95,15 @@ export default function Sidebar() {
                 </a>
               </p>
               <p>
+                <strong>Email:</strong>{" "}
+                <a
+                  href="mailto:paulinett@live.com"
+                  className="text-primary hover:underline"
+                >
+                  paulinett@live.com
+                </a>
+              </p>
+              <p>
                 <strong>Website:</strong>{" "}
                 <a
                   href="https://flowdigitalstudio.com.br"

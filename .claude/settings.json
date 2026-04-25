@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Read",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path // \"\"' | { read -r f; if echo \"$f\" | grep -qE \"agnostic-core/(skills|agents|commands)\"; then label=$(echo \"$f\" | sed 's|.*agnostic-core/||; s|\\.md$||'); jq -n --arg msg \"Skill ativada: $label\" '{\"systemMessage\": $msg}'; fi; } 2>/dev/null || true"
+          }
+        ]
+      }
+    ]
+  }
+}

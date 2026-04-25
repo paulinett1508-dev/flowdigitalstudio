@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(update-config)",
+      "Bash(magick --version)",
+      "Bash(convert --version)",
+      "Bash(python -c \"from PIL import Image; print\\('Pillow OK'\\)\")",
+      "Bash(python *)",
+      "Bash(mv 1.png logo-principal-gradiente-fundo-claro.png)",
+      "Bash(mv 2.png logo-principal-gradiente-fundo-escuro.png)",
+      "Bash(mv 3.png logo-principal-mono-branco-fundo-escuro.png)",
+      "Bash(mv 4.png simbolo-circular-gradiente-fundo-escuro.png)",
+      "Bash(mv 5.png simbolo-circular-gradiente-fundo-claro.png)",
+      "Bash(mv 1.svg logo-principal-gradiente-fundo-claro.svg)",
+      "Bash(mv 2.svg logo-principal-gradiente-fundo-escuro.svg)",
+      "Bash(mv 3.svg logo-principal-mono-branco-fundo-escuro.svg)",
+      "Bash(mv 4.svg simbolo-circular-gradiente-fundo-escuro.svg)",
+      "Bash(mv 5.svg simbolo-circular-gradiente-fundo-claro.svg)",
+      "Bash(cp D:/PROJETOS/flowdigitalstudio/assets/kit-logo-flow-SVG/*.svg D:/PROJETOS/flowdigitalstudio/client/public/)",
+      "Bash(cp D:/PROJETOS/flowdigitalstudio/assets/kit-logo-flow-PNG/*.png D:/PROJETOS/flowdigitalstudio/client/public/)",
+      "Bash(git -C D:/PROJETOS/flowdigitalstudio status)",
+      "Bash(git -C D:/PROJETOS/flowdigitalstudio diff --stat HEAD)",
+      "Bash(vercel --version)",
+      "Bash(git *)"
+    ]
+  }
+}
