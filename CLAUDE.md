@@ -5,6 +5,50 @@ Submodulo: .agnostic-core/
 
 ---
 
+Orquestração do Fluxo de Trabalho:
+
+1. Modo de Planejamento (padrão)
+   - Tarefas não triviais (3+ etapas ou decisões arquiteturais): entre em plan mode antes de codar.
+   - Se algo der errado durante a execução: PARE e replanejeje imediatamente — não force.
+   - Use plan mode também para etapas de verificação, não apenas construção.
+   - Escreva especificações detalhadas antecipadamente para reduzir ambiguidade.
+   - Skill: .agnostic-core/skills/behavioral/goal-backward-planning.md
+
+2. Estratégia de Subagentes
+   - Use subagentes liberalmente para manter a janela de contexto principal limpa.
+   - Descarregue pesquisa, exploração de codebase e análise paralela para subagentes.
+   - Uma tarefa por subagente — execução focada, prompt auto-contido.
+   - Skill: .agnostic-core/skills/behavioral/context-management.md
+
+3. Verificação Antes de Concluir
+   - Nunca marque uma tarefa como concluída sem provar que ela funciona.
+   - Execute testes, leia logs, demonstre a correção — não confie só em "compilou".
+   - Diferencie o comportamento entre main e suas mudanças quando relevante.
+   - Pergunte-se: "um engenheiro sênior da equipe aprovaria isso em code review?"
+   - Se não for possível testar (ex.: UI sem dev server), declare explicitamente em vez de afirmar sucesso.
+   - Skill: .agnostic-core/skills/audit/validation-checklist.md
+
+4. Exigência de Elegância (balanceada)
+   - Mudanças não triviais: pause e pergunte "existe uma forma mais elegante?".
+   - Se uma correção parecer paliativa: re-implemente sabendo tudo que sabe agora.
+   - Pule isso para correções simples e óbvias — não super-engenhe.
+   - Desafie seu próprio trabalho antes de apresentá-lo ao usuário.
+
+5. Correção de Bugs Autônoma
+   - Bug report recebido: conserte. Não peça ajuda nem instruções passo-a-passo.
+   - Persiga logs, mensagens de erro, testes falhando — depois resolva a causa raiz.
+   - Zero troca de contexto exigida do usuário.
+   - Testes/CI quebrados: investigue e corrija sem que digam como.
+   - Skill: .agnostic-core/skills/audit/systematic-debugging.md
+
+6. Loop de Auto-aperfeiçoamento
+   - Após qualquer correção do usuário: registre o padrão em tasks/lessons.md.
+   - Escreva regras concretas para si mesmo que previnam o mesmo erro.
+   - Revise tasks/lessons.md no início de cada sessão do projeto.
+   - Itere implacavelmente até a taxa de erros cair.
+
+---
+
 Antes de implementar:
 
 Backend:
@@ -116,6 +160,27 @@ Convencoes do projeto (preencher):
   CI/CD: GitHub Actions / outro
   Deploy: [PLATAFORMA]
   Estilo de commits: Conventional Commits
+
+---
+
+Gerenciamento de Tarefas:
+
+  1. Plano primeiro:        escreva o plano em tasks/todo.md com itens marcáveis [ ]
+  2. Verifique o plano:     confirme com o usuário (ou consigo) antes de iniciar
+  3. Acompanhe o progresso: marque [x] conforme avança, um item por vez
+  4. Explique mudanças:     resumo de alto nível em cada etapa concluída
+  5. Documente resultados:  seção de revisão em tasks/todo.md ao final
+  6. Capture lições:        atualize tasks/lessons.md após cada correção do usuário
+
+---
+
+Princípios Básicos:
+
+  - Simplicidade primeiro: cada mudança o mais simples possível, impacto mínimo no codebase.
+  - Sem paliativos:        encontre causas raiz; padrões de dev sênior, não correções temporárias.
+  - Impacto mínimo:        toque apenas no necessário; sem efeitos colaterais ou novos bugs.
+  - Sem over-engineering:  não adicione features, abstrações ou error handling que a tarefa não pede.
+  - Honestidade técnica:   se não pode verificar (ex.: UI), declare explicitamente; nunca finja sucesso.
 
 ---
 Comportamento
